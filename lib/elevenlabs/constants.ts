@@ -1,0 +1,163 @@
+export const PROFESSIONAL_VOICES = [
+  {
+    id: '21m00Tcm4TlvDq8ikWAM',
+    name: 'Rachel',
+    category: 'professional',
+    description: 'A warm and engaging professional female voice',
+    gender: 'Female',
+    age: 'Adult',
+    accent: 'American',
+    useCase: 'Corporate presentations, product demos',
+  },
+  {
+    id: 'AZnzlk1XvdvUeBnXmlld',
+    name: 'Michael',
+    category: 'professional',
+    description: 'Authoritative and confident male voice',
+    gender: 'Male',
+    age: 'Adult',
+    accent: 'American',
+    useCase: 'Business narratives, documentaries',
+  },
+  {
+    id: 'EXAVITQu4vr4xnSDxMaL',
+    name: 'Sarah',
+    category: 'casual',
+    description: 'Friendly and conversational female voice',
+    gender: 'Female',
+    age: 'Young Adult',
+    accent: 'British',
+    useCase: 'Social media, casual content',
+  },
+  {
+    id: 'VR6AewLTigWG4xSOukaG',
+    name: 'James',
+    category: 'news',
+    description: 'Clear and articulate news presenter voice',
+    gender: 'Male',
+    age: 'Adult',
+    accent: 'British',
+    useCase: 'News broadcasts, formal announcements',
+  },
+  {
+    id: 'pNInz6obpgDQGcFmaJgB',
+    name: 'Emily',
+    category: 'storytelling',
+    description: 'Warm and expressive storytelling voice',
+    gender: 'Female',
+    age: 'Adult',
+    accent: 'American',
+    useCase: 'Audiobooks, children\'s content',
+  },
+  {
+    id: 'yoZ06aMxZJJ28mfd3POQ',
+    name: 'David',
+    category: 'professional',
+    description: 'Deep and trustworthy corporate voice',
+    gender: 'Male',
+    age: 'Adult',
+    accent: 'American',
+    useCase: 'Corporate videos, commercials',
+  },
+  {
+    id: 'jBpfuIE2acCO8z3wKNLl',
+    name: 'Sophie',
+    category: 'casual',
+    description: 'Young and energetic female voice',
+    gender: 'Female',
+    age: 'Young Adult',
+    accent: 'Australian',
+    useCase: 'Social media, youth content',
+  },
+  {
+    id: 'tL9HWJxvgPSAjwkGqKMm',
+    name: 'Alex',
+    category: 'professional',
+    description: 'Clear and professional voice with natural tone',
+    gender: 'Male',
+    age: 'Adult',
+    accent: 'Canadian',
+    useCase: 'E-learning, tutorials',
+  },
+  {
+    id: 'nkQGWECHpvTs7WmPiRYk',
+    name: 'Maria',
+    category: 'professional',
+    description: 'Warm and professional bilingual voice',
+    gender: 'Female',
+    age: 'Adult',
+    accent: 'Spanish',
+    useCase: 'Multilingual content, international business',
+  },
+  {
+    id: 'qKPnGUgTiZJXfNkMwUYd',
+    name: 'Thomas',
+    category: 'news',
+    description: 'Authoritative news anchor voice',
+    gender: 'Male',
+    age: 'Adult',
+    accent: 'American',
+    useCase: 'News reports, documentaries',
+  }
+];
+
+export const VOICE_CATEGORIES = [
+  { id: 'professional', name: 'Professional', description: 'Perfect for business and corporate content' },
+  { id: 'casual', name: 'Casual', description: 'Natural and conversational voices' },
+  { id: 'news', name: 'News', description: 'Clear and authoritative presentation' },
+  { id: 'storytelling', name: 'Storytelling', description: 'Engaging narrative voices' }
+] as const;
+
+export const VOICE_PRESETS = [
+  {
+    id: 'natural',
+    name: 'Natural Conversational',
+    description: 'Balanced settings for natural speech',
+    settings: {
+      stability: 0.5,
+      similarityBoost: 0.75,
+      style: 0.5,
+      speakingRate: 1,
+      useHighestQuality: true,
+    },
+  },
+  {
+    id: 'professional',
+    name: 'Professional Presenter',
+    description: 'Clear and authoritative speech',
+    settings: {
+      stability: 0.8,
+      similarityBoost: 0.7,
+      style: 0.3,
+      speakingRate: 0.9,
+      useHighestQuality: true,
+    },
+  },
+  {
+    id: 'emotional',
+    name: 'Emotional Expressive',
+    description: 'More dynamic and emotive speech',
+    settings: {
+      stability: 0.3,
+      similarityBoost: 0.8,
+      style: 0.8,
+      speakingRate: 1.1,
+      useHighestQuality: true,
+    },
+  }
+];
+
+export const SUPPORTED_LANGUAGES = [
+  { id: 'en-US', name: 'English (US)', flag: '🇺🇸' },
+  { id: 'en-GB', name: 'English (UK)', flag: '🇬🇧' },
+  { id: 'es', name: 'Spanish', flag: '🇪🇸' },
+  { id: 'fr', name: 'French', flag: '🇫🇷' },
+  { id: 'de', name: 'German', flag: '🇩🇪' },
+  { id: 'it', name: 'Italian', flag: '🇮🇹' },
+  { id: 'pt', name: 'Portuguese', flag: '🇵🇹' },
+  { id: 'pl', name: 'Polish', flag: '🇵🇱' },
+  { id: 'hi', name: 'Hindi', flag: '🇮🇳' },
+  { id: 'ja', name: 'Japanese', flag: '🇯🇵' },
+  { id: 'ko', name: 'Korean', flag: '🇰🇷' },
+  { id: 'zh', name: 'Chinese', flag: '🇨🇳' }
+] as const;
